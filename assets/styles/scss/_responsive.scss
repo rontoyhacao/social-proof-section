@@ -57,4 +57,11 @@
         }
     }
 }
-    
+
+@media (min-width: 813px) and (max-width: 1118px) {
+    .container {
+        .wrapper {
+            grid-template-rows: 350px 1fr;
+        }
+    }
+}
