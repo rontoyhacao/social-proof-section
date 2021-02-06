@@ -1,0 +1,98 @@
+.container {
+    margin: 0 7%;
+    .wrapper {
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 230px 1fr;
+        grid-gap: 50px;
+        grid-column-gap: 0;
+        .header-container {
+            padding-right: 100px;
+            .heading {
+                font-size: 3rem;
+                font-weight: 700;
+                color: $Very-Dark-Magenta;
+            }
+            #heading-description {
+                margin-top: 10px;
+                font-weight: 500;
+            }
+        }
+        .ratings-container {
+            width: 100%;
+            padding: 15px 0 0 0;
+            .rating {
+                width: 500px;
+                padding: 15px 25px;
+                margin-bottom: 10px;
+                display: flex;
+                background: $Light-Grayish-Magenta;
+                border-radius: 7px;
+                position: relative;
+                .stars-container {
+                    img {
+                        margin-right: 3px;
+                    }
+                }
+                &:nth-child(2) {
+                    left: 40px;
+                }
+                &:nth-child(3) {
+                    left: 80px;
+                }
+                .rating-description {
+                    margin-left: 40px;
+                    font-weight: 700;
+                    color: $Very-Dark-Magenta;
+                }
+            }
+        }
+        .testimonials-container {
+            grid-column: 1/4;
+            display: flex;
+            justify-content: space-between;
+            .testimonial {
+                background: $Very-Dark-Magenta;
+                color: $White;
+                width: 370px;
+                padding: 30px 40px;
+                border-radius: 5px;
+                position: relative;
+                &:nth-child(2) {
+                    top: 15px;
+                }
+                &:nth-child(3) {
+                    top: 30px;
+                }
+                .testimonial-info {
+                    display: flex;
+                    .profile-image {
+                        padding-right: 20px;
+                        img {
+                            border-radius: 50%;
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                    .testimonial-info-name {
+                        span {
+                            &:nth-child(1) {
+                                font-weight: 500;
+                            }
+                            &:nth-child(2) {
+                                display: block;
+                                color: $Soft-Pink;
+                            }
+                        }
+                    }
+                }
+                .testimonial-content {
+                    p {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
